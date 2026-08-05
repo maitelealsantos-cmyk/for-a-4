@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const btnCalculate = document.getElementById('btn-calculate');
+  const forceInput = document.getElementById('force');
+  const timeInput = document.getElementById('time');
+  const resultBox = document.getElementById('result');
+  const resultText = document.getElementById('result-text');
+
+  btnCalculate.addEventListener('click', () => {
+    const force = parseFloat(forceInput.value);
+    const time = parseFloat(timeInput.value);
+
+    if (isNaN(force) || isNaN(time)) {
+      resultText.textContent = 'Por favor, insira valores válidos.';
+      resultBox.classList.remove('hidden');
+      return;
+    }
+
+    // Fórmula do Impulso: I = F * Δt
+    const impulse = force * time;
+
+    resultText.innerHTML = `<strong>Impulso ($I$):</strong> ${impulse} N·s`;
+    resultBox.classList.remove('hidden');
+  });
+});
