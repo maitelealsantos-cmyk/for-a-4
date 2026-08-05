@@ -1,0 +1,7 @@
+forca-tempo/
+├── index.html
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── script.js
