@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Força e Tempo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora: Força e Tempo</h1>
+    <p>Calcule a Força Média ou a Variação do Momento Linear.</p>
+
+    <div class="form-group">
+      <label for="force">Força ($F$) em Newtons (N):</label>
+      <input type="number" id="force" placeholder="Ex: 50">
+    </div>
+
+    <div class="form-group">
+      <label for="time">Tempo ($\Delta t$) em segundos (s):</label>
+      <input type="number" id="time" placeholder="Ex: 2">
+    </div>
+
+    <button id="btn-calculate">Calcular Impulso ($I$)</button>
+
+    <div id="result" class="result-box hidden">
+      <h3>Resultado:</h3>
+      <p id="result-text"></p>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
